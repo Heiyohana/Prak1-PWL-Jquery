@@ -1,2 +1,4 @@
 # Prak1-PWL-Jquery
-Tugas Praktikum PWL Ke - 1
+Nama    : Hendamia Yohana Sembiring <br/>
+NIM     : 119140178 <br/>
+Prak1-PWL-Jquery <br/>

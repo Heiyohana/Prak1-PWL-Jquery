@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 1 JQuery</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <p>Pemesanan Produk</p>
+            <hr/>
+        </div>
+
+        <!-- Form Pesanan -->
+        <div class="card-wrap">
+            <div class="card">
+                <h2>Data</h2>
+                
+                <form id="order" onsubmit="return false">
+                    <!-- Input Data Nama Pemesan -->
+                    <div>
+                        <a>Nama</a>
+                        <input 
+                            type="text"
+                            id="input-name"
+                            class="field-buyer"
+                            required
+                        />
+                    </div>
+
+                    <!-- Order -->
+                    <a>Pilih Produk</a>
+                    <div class="produk-card">
+                        <div class="select-option">
+                            <label for="product">Produk</label>
+                            <select id="product" required>
+                                <option value="0" hidden>Pilih Produk</option>
+                                <option value="Jet Tempur">Jet Tempur</option>
+                                <option value="Nuklir Hiroshima">Nuklir Hiroshima</option>
+                                <option value="Infinity Stone">Infinity Stone</option>
+                                <option value="Burj Khalifa">Burj Khalifa</option>
+                                <option value="Rudal Hipersonik">Rudal Hipersonik</option>
+                            </select>
+                        </div>
+
+                        <div class="input-quantity">
+                            <label for="quantity">Jumlah</label>
+                            <input 
+                                id="quantity"
+                                type="number"
+                                class="field-quantity"
+                                required
+                            />
+                        </div>
+                    </div>
+
+                    <button id="btn-add">Tambah Produk</button>
+                    <br/>
+                    <button id="btn-submit">Pesan</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
