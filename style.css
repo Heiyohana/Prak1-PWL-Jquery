@@ -11,11 +11,14 @@
 .navbar{
     text-align: center;
     align-items: center;
+    margin-bottom: 5px;
 }
 
 .card{
     padding: 5%;
     border: 1px solid rgb(218, 218, 218);
+    border-radius: 5px;
+    margin-bottom: 5%;
 }
 
 .card-wrap{
@@ -35,7 +38,7 @@ input{
 
 select{
     padding: 5px;
-    width: 200px;
+    width: 130px;
     border: 1px solid rgb(218, 218, 218);
     border-radius: 5px;
 }
@@ -44,12 +47,12 @@ select{
     float: left;
 }
 
-.input-quantity {
+.field-quantity {
     float: left;
     padding-left: 20px;
 }
 
-.field-quantity {
+.quantity {
     margin: 5px;
 }
 
@@ -59,4 +62,54 @@ button{
     border-radius: 5px;
     text-align: center;
     border: 1px solid rgb(218, 218, 218);
+}
+
+.del{
+    float: left;
+    margin-top: 18px;
+}
+
+li {
+    font-size: medium;
+}
+
+.box{
+    padding-top: 5px;
+    color: red;
+    border-color: red;
+}
+
+.btn-primary{
+    background-color: blue;
+    color: white;
+    width: 100%;
+}
+
+.btn-primary:hover{
+    background-color: rgb(90, 90, 254);
+    cursor: pointer;
+}
+
+.btn-green{
+    background-color: green;
+    margin-bottom: 5px;
+    color: white;
+    width: 100%;
+}
+
+.btn-green:hover{
+    background-color: rgb(42, 251, 42);
+    cursor: pointer;
+}
+
+.btn-danger{
+    padding: 2px 8px;
+    border: 2px solid red;
+    background-color: white;
+}
+
+.btn-danger:hover {
+    border: 2px solid red;
+    cursor: pointer;
+    background-color: rgb(255, 234, 6);
 }

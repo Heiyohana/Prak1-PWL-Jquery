@@ -3,9 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Praktikum 1 JQuery</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Ini dulu baru akses file code .js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+            crossorigin="anonymous">
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="index.js"></script>
+    
 </head>
 <body>
     <div class="container">
@@ -14,15 +27,20 @@
             <hr/>
         </div>
 
+        <!-- Rekap Pemesanan -->
+        <h2 id="name-show"></h2>
+        <h3 id="order-list"></h3>
+
         <!-- Form Pesanan -->
         <div class="card-wrap">
             <div class="card">
                 <h2>Data</h2>
                 
-                <form id="order" onsubmit="return false">
+                <form id="form" onsubmit="return false">
                     <!-- Input Data Nama Pemesan -->
                     <div>
                         <a>Nama</a>
+                        <br/>
                         <input 
                             type="text"
                             id="input-name"
@@ -31,12 +49,14 @@
                         />
                     </div>
 
+                    <br />
                     <!-- Order -->
                     <a>Pilih Produk</a>
-                    <div class="produk-card">
+                    <br /><br />
+                    <div class="product-card">
                         <div class="select-option">
-                            <label for="product">Produk</label>
-                            <select id="product" required>
+                            <label for="product-1">Produk</label><br />
+                            <select id="product-1" required>
                                 <option value="0" hidden>Pilih Produk</option>
                                 <option value="Jet Tempur">Jet Tempur</option>
                                 <option value="Nuklir Hiroshima">Nuklir Hiroshima</option>
@@ -44,26 +64,26 @@
                                 <option value="Burj Khalifa">Burj Khalifa</option>
                                 <option value="Rudal Hipersonik">Rudal Hipersonik</option>
                             </select>
+                            <br/>
                         </div>
 
-                        <div class="input-quantity">
-                            <label for="quantity">Jumlah</label>
+                        <div class="field-quantity">
+                            <label for="quantity-1">Jumlah</label><br />
                             <input 
-                                id="quantity"
+                                id="quantity-1"
                                 type="number"
-                                class="field-quantity"
+                                class="quantity"
                                 required
                             />
                         </div>
                     </div>
 
-                    <button id="btn-add">Tambah Produk</button>
+                    <button id="btn-add" class="btn-green">Tambah Produk</button>
                     <br/>
-                    <button id="btn-submit">Pesan</button>
+                    <button id="btn-pesan" class="btn-primary">Pesan</button>
                 </form>
             </div>
         </div>
-
     </div>
 </body>
 </html>
